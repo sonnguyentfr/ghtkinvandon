@@ -1,0 +1,31 @@
+﻿{
+  "name": "In van don GHTK",
+  "description": "In tất cả mọi khổ giấy. Mr Dòi viết vì ghét thằng GHTK",
+  "version": "0.1.2",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "permissions": [
+    "https://khachhang.giaohangtietkiem.vn/",
+    "tabs",
+    "webRequest"
+  ],
+  "manifest_version": 2,
+  "options_page": "index.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://khachhang.giaohangtietkiem.vn/*"
+      ],
+      "js": [
+        "jquery.min.js",
+        "script.js"
+      ],
+      "css": [
+        "ghtkin.css"
+      ]
+    }
+  ]
+}

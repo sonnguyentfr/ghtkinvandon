@@ -1,0 +1,81 @@
+﻿<html>
+<head>
+    <title>Mr Dòi In vận đơn GHTK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ghtkin.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link href="ghtkin.css" type="text/css" rel="stylesheet" media="screen,print" />
+    <style>
+        body {
+            font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+            font-size: 100%;
+        }
+
+        a, a:focus {
+            display: inline-block;
+            outline: none;
+        }
+
+        #tag {
+            min-width: 200px;
+        }
+
+        .image {
+            max-width: 200px;
+        }
+
+        #content {
+            text-align: center;
+        }
+
+        .table {
+            font-size: 14px;
+        }
+
+            .table tr td.td1 {
+                width: 20px;
+                text-align: right;
+            }
+
+            .table tr td .form-control {
+                height: 30px;
+                font-size: 16px;
+                font-weight: bold;
+                width: 100px;
+                float: left;
+                padding: 3px;
+                margin-right: 5px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" style="width: 250px">
+        <div class="form-group row">
+            <table cellpadding="0" cellspacing="0" class="table">
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            Kích thước mặc định: 100mmx75mm
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Dài:</td>
+                        <td><input type="number" class="form-control" id="idWidth">(mm)</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">Rộng:</td>
+                        <td><input type="number" class="form-control" id="idHeight">(mm)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button id="btnchayde" class="btn">Chạy đê</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="script.js" type="text/javascript" media="screen,print"></script>
+</body>
+</html>
